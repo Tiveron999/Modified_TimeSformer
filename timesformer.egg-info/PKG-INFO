@@ -5,6 +5,7 @@ Summary: TimeSformer
 Home-page: unknown
 Author: FBAI
 License: UNKNOWN
+<<<<<<< HEAD
 Keywords: artificial intelligence,attention mechanism,transformers,video classification
 Platform: UNKNOWN
 Provides-Extra: tensorboard_video_visualization
@@ -12,3 +13,9 @@ License-File: LICENSE
 
 UNKNOWN
 
+=======
+Description: UNKNOWN
+Keywords: artificial intelligence,attention mechanism,transformers,video classification
+Platform: UNKNOWN
+Provides-Extra: tensorboard_video_visualization
+>>>>>>> ddb4cf3 (renamed lib to timesformer, fix setup)

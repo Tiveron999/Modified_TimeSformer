@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 LICENSE
+=======
+>>>>>>> ddb4cf3 (renamed lib to timesformer, fix setup)
 README.md
 setup.cfg
 setup.py
