@@ -48,7 +48,7 @@ _C.TRAIN.DATASET = "kinetics"
 _C.TRAIN.FINETUNE = False
 
 # Total mini-batch size.
-_C.TRAIN.BATCH_SIZE = 64
+_C.TRAIN.BATCH_SIZE = 1
 
 # Evaluate model on test data every eval period epochs.
 _C.TRAIN.EVAL_PERIOD = 10
@@ -86,7 +86,7 @@ _C.TEST.ENABLE = True
 _C.TEST.DATASET = "kinetics"
 
 # Total mini-batch size
-_C.TEST.BATCH_SIZE = 8
+_C.TEST.BATCH_SIZE = 1
 
 # Path to the checkpoint to load the initial weight.
 _C.TEST.CHECKPOINT_FILE_PATH = ""
@@ -280,7 +280,7 @@ _C.DATA = CfgNode()
 _C.DATA.PATH_TO_DATA_DIR = ""
 
 # The separator used between path and label.
-_C.DATA.PATH_LABEL_SEPARATOR = " "
+_C.DATA.PATH_LABEL_SEPARATOR = "|"
 
 # Video path prefix if any.
 _C.DATA.PATH_PREFIX = ""
@@ -429,7 +429,7 @@ _C.LOG_MODEL_INFO = False
 _C.DIST_BACKEND = "nccl"
 
 # Global batch size
-_C.GLOBAL_BATCH_SIZE = 64
+_C.GLOBAL_BATCH_SIZE = 4
 
 # ---------------------------------------------------------------------------- #
 # Benchmark options
@@ -452,7 +452,7 @@ _C.BENCHMARK.SHUFFLE = True
 _C.DATA_LOADER = CfgNode()
 
 # Number of data loader workers per training process.
-_C.DATA_LOADER.NUM_WORKERS = 8
+_C.DATA_LOADER.NUM_WORKERS = 1
 
 # Load data to pinned host memory.
 _C.DATA_LOADER.PIN_MEMORY = True
